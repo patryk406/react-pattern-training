@@ -1,5 +1,5 @@
 import React from 'react'
-import { useAuth } from '../../AuthContext'
+import { useAuth } from '../Contexts/AuthContext'
 
 function PassphraseForm() {
     const { setLogIn } = useAuth();

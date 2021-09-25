@@ -1,11 +1,14 @@
 import React from 'react'
+import withData from '../withData/withData'
 
-function Movies() {
+function Movies(props) {
     return (
-        <div>
-            hello from movies
-        </div>
+        <>
+            <h1>This is Movies Page</h1>
+            <div>Hello {props.name} {props.admin ? 'you are admin ! thats great' : 'your access is limited, you are not the administrator'}</div>
+            <p>if you have some problem, please contact support: {props.email}</p>
+        </>
     )
 }
 
-export default Movies
+export default withData(Movies)

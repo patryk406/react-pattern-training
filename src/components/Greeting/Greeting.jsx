@@ -1,10 +1,12 @@
-function Greeting() {
+import withData from "../withData/withData"
+
+function Greeting(props) {
     return (
         <div>
             <h1>
-                Greeting in my page
+                Greetings {props.name}
             </h1>
         </div>
     )
 }
-export default Greeting
+export default withData(Greeting)
