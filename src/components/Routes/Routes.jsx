@@ -5,24 +5,12 @@ import Places from '../Places/Places'
 import Movies from '../Movies/Movies'
 import PassphraseForm from '../Pass/PassphraseForm';
 import { UserProvider } from '../Contexts/UserContext'
+import Nav from '../Nav/Nav';
 export const AuthenticatedRoutes = () => {
     return (
         <Router>
             <>
-                <nav>
-                    <ul>
-                        <li>
-                            <Link to='/'>Home</Link>
-                        </li>
-                        <li>
-                            <Link to='/movies'>Movies</Link>
-                        </li>
-                        <li>
-                            <Link to='/places'>Places</Link>
-                        </li>
-                    </ul>
-                </nav>
-
+                <Nav />
                 <Switch>
                     <UserProvider>
                         <Route exact path='/' component={Greeting} />
