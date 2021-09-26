@@ -1,5 +1,5 @@
 import React from 'react'
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Greeting from '../Greeting/Greeting'
 import Places from '../Places/Places'
 import Movies from '../Movies/Movies'
