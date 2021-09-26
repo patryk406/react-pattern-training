@@ -1,7 +1,7 @@
 import { GiMountainRoad } from 'react-icons/gi'
 import { AiOutlineHome } from 'react-icons/ai'
 import { RiMovieLine } from 'react-icons/ri'
-import { Link } from "react-router-dom"
+import { Link } from 'react-router-dom'
 export function DesktopNavItem() {
 
     return (

@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect } from 'react';
 
 export function useMobile() {
     const [{ width, height }, setSize] = useState({
@@ -18,10 +18,10 @@ export function useMobile() {
                 setIsMobile(true)
             }
         }
-        window.addEventListener("resize", handleResize);
+        window.addEventListener('resize', handleResize);
 
         return () => {
-            window.removeEventListener("resize", handleResize);
+            window.removeEventListener('resize', handleResize);
         };
     }, [setSize]);
     return { isMobile };
