@@ -1,11 +1,12 @@
 import React from 'react'
 import withData from '../withData/withData'
+import { Text, Box } from "@chakra-ui/react"
 function Places(props) {
     return (
         <>
-            <h1>This is Places Page</h1>
-            <div>Hello {props.name} {props.admin ? 'you are admin ! thats great' : 'your access is limited, you are not the administrator'}</div>
-            <p>if you have some problem, please contact support: {props.email}</p>
+            <Text fontSize="2rem">This is Places Page</Text>
+            <Box fontSize='1rem' py='2rem'>Hello {props.name} {props.isAdmin ? 'you are admin ! thats great' : 'your access is limited, you are not the administrator'}</Box>
+            <Text fontSize='1rem' as="cite">if you have some problem, please contact support: {props.email}</Text>
         </>
     )
 }
